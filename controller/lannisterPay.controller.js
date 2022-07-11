@@ -2,7 +2,7 @@ const lannisterPay = (req,res) => {
     try{
         const splits =req.body.SplitInfo;
         req.accepts('application/json');
-        if(splits.length<1 || splits.length>25)
+        if(splits.length<1 || splits.length>20)
         {
             res.statusCode=401;
             res.statusMessage="invalid parameter";
