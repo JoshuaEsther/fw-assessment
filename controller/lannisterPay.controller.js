@@ -6,7 +6,7 @@ const lannisterPay = (req,res) => {
         {
             res.statusCode=401;
             res.statusMessage="invalid parameter";
-            return res.json()
+            return res.json(res.statusMessage)
         }
         var amount = req.body.Amount;
         var balance=0;
